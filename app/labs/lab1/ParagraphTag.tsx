@@ -29,8 +29,8 @@ export default function ParagraphTag() {
         visible gap between it and its neighbors.
       </p>
       <p id="wd-p-your-1">
-        Hi, I am Kai. I am studying computer science at Northeastern
-        University.
+        Hi, I am Kai. I am from China, and I am doing my MS in Computer
+        Science at Northeastern University.
       </p>
       <p id="wd-p-your-2">
         In this course I hope to learn how to build and deploy full stack web

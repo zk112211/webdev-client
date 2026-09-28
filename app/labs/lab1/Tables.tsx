@@ -80,34 +80,30 @@ export default function Tables() {
           </tr>
         </tfoot>
       </table>
-      <h5>My courses this term</h5>
+      <h5>CS5610 this term</h5>
       <table id="wd-your-table" border={1} width="100%">
         <thead>
           <tr>
-            <th>Course</th>
-            <th align="center">Title</th>
-            <th align="center">Day</th>
-            <th>Credits</th>
+            <th>Assignment</th>
+            <th align="center">Topic</th>
+            <th align="center">Status</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>CS5610</td>
-            <td align="center">Web Development</td>
-            <td align="center">Monday</td>
-            <td align="right">4</td>
+            <td>A1</td>
+            <td align="center">ENV + HTML</td>
+            <td align="center">Done</td>
           </tr>
           <tr>
-            <td>CS5800</td>
-            <td align="center">Algorithms</td>
-            <td align="center">Wednesday</td>
-            <td align="right">4</td>
+            <td>A2</td>
+            <td align="center">CSS + Tailwind</td>
+            <td align="center">Up next</td>
           </tr>
           <tr>
-            <td>CS5200</td>
-            <td align="center">Database Management Systems</td>
-            <td align="center">Thursday</td>
-            <td align="right">4</td>
+            <td>A3</td>
+            <td align="center">JavaScript + React</td>
+            <td align="center">Not started</td>
           </tr>
         </tbody>
       </table>

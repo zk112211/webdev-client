@@ -33,9 +33,9 @@ export default function Images() {
       <br />
       <img
         id="wd-your-image"
-        src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg"
-        width="200px"
-        alt="The Earth seen from Apollo 17"
+        src="https://cdn.shopify.com/s/files/1/0594/9276/1678/files/6867b59e84e5524393d65eb1_AD_4nXcKfW2IWFk--LRm5ZIW_MUhq9q7QPhpYZUKoaUYr38Z6ihA6Gu0C1Ui8BBTzKr0-_gqZ9wtnpmIk7gdocnqR-z46YkPII28PcRIO2QvJ0L6nsOVfbWMTEdvMPCGD2V7zw1EimQ2Xw.png"
+        width="300px"
+        alt="Darth Vader in the hallway scene from Rogue One"
       />
     </div>
   );

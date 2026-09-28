@@ -6,7 +6,7 @@ export default function Labs() {
       <h1>Labs</h1>
       <h3 id="wd-student-name">Kai Zhu</h3>
       <a
-        href="https://github.com/zhukai/webdev-client"
+        href="https://github.com/zk112211/webdev-client"
         id="wd-github"
         target="_blank"
         rel="noreferrer"

@@ -12,12 +12,12 @@ export default function AnchorTag() {
         GitHub
       </a>
       <br />
-      <a href="https://news.ycombinator.com" id="wd-your-link">
-        Hacker News
+      <a href="https://github.com" id="wd-your-link">
+        GitHub
       </a>
       <br />
       <a
-        href="https://github.com/zhukai"
+        href="https://github.com/zk112211"
         id="wd-your-github"
         target="_blank"
         rel="noreferrer"

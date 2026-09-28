@@ -47,7 +47,7 @@ export default function HighlightedParagraphLab() {
         borderRadius="0px"
       />
       <HighlightedParagraph
-        text="About me: my favorite course so far is web development, and I love hiking on weekends."
+        text="About me: in my free time I play games like CS2, Valorant, and Baldur's Gate 3."
         backgroundColor="#e0f7fa"
         borderColor="teal"
         borderWidth={2}

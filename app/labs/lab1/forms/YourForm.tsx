@@ -77,7 +77,6 @@ export default function YourForm() {
         type="checkbox"
         name="your-interests"
         id="wd-your-interest-frontend"
-        defaultChecked
       />
       <label htmlFor="wd-your-interest-frontend">Front-end development</label>
       <br />
@@ -85,7 +84,6 @@ export default function YourForm() {
         type="checkbox"
         name="your-interests"
         id="wd-your-interest-backend"
-        defaultChecked
       />
       <label htmlFor="wd-your-interest-backend">Back-end development</label>
       <br />
@@ -96,14 +94,19 @@ export default function YourForm() {
       />
       <label htmlFor="wd-your-interest-databases">Databases</label>
       <br />
-      <input type="checkbox" name="your-interests" id="wd-your-interest-ai" />
+      <input
+        type="checkbox"
+        name="your-interests"
+        id="wd-your-interest-ai"
+        defaultChecked
+      />
       <label htmlFor="wd-your-interest-ai">AI and machine learning</label>
       <br />
 
       <h5>Program</h5>
       <label htmlFor="wd-your-major">Major: </label>
       <select id="wd-your-major" defaultValue="CS">
-        <option value="CS">Computer Science</option>
+        <option value="CS">Computer Science (MSCS)</option>
         <option value="DS">Data Science</option>
         <option value="IS">Information Systems</option>
         <option value="SE">Software Engineering Systems</option>
