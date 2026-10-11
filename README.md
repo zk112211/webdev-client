@@ -1,16 +1,40 @@
 # webdev-client
 
-Kai Zhu, CS5610 Web Development, Fall 2026
+![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=nextdotjs)
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38BDF8?logo=tailwindcss&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
 
-Next.js app for the course labs and the Kambaz project. Each assignment builds on the same app, and there's a branch for each submission (a1, a2, ...).
+**Kai Zhu** · CS5610 Web Development · Fall 2026
 
-A1 is plain HTML: Lab 1 exercises under `app/labs`, and prototype Kambaz screens under `app/(kambaz)`. No real styling yet, that comes in A2.
+A Next.js app for the course labs and **Kambaz**, a Canvas-style learning management system built over the semester.
 
-To run locally:
+## Assignments
+
+Each assignment lives on its own branch of this repo.
+
+| Branch | What's in it |
+| ------ | ------------ |
+| `a1` | Lab 1 HTML exercises and the plain-HTML Kambaz prototype |
+| `a2` | Lab 2 CSS exercises, plus Kambaz restyled with Tailwind and React Icons |
+
+## Project layout
 
 ```
+app/
+├── labs/        # Lab exercises (lab1, lab2, ...)
+└── (kambaz)/    # Kambaz: account, dashboard, courses
+public/images/   # Course card images and logo
+```
+
+## Getting started
+
+```bash
 npm install
 npm run dev
 ```
 
-Then open http://localhost:3000/labs. The root URL redirects to the Kambaz sign-in page.
+Then open:
+
+- http://localhost:3000/labs for the labs index
+- http://localhost:3000 for Kambaz (redirects to sign-in)
