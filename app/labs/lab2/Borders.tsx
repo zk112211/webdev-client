@@ -8,7 +8,10 @@ export default function Borders() {
       <p className="wd-border-thin wd-border-blue wd-border-dashed">
         Dashed thin blue border
       </p>
-      {/* TODO (On your own §2.1.9): a third mix of width, style, and color */}
+      {/* TODO §2.1.9 */}
+      <p className="wd-border-thin wd-border-solid wd-border-red">
+        Solid thin red border
+      </p>
       {/* With AI §2.1.9 */}
       <p id="wd-ai-border" className="wd-border-fat wd-border-dashed wd-border-yellow">
         Dashed fat yellow border

@@ -19,7 +19,10 @@ export default function Positions() {
           >
             Nudged
           </div>
-          {/* TODO (On your own §2.1.13): your own relatively positioned box */}
+          {/* TODO §2.1.13 */}
+          <div className="wd-pos-relative-nudge-right wd-bg-color-yellow wd-dimension-square">
+            Nudged right
+          </div>
         </div>
       </div>
       <div id="wd-css-position-absolute">
@@ -41,7 +44,10 @@ export default function Positions() {
           >
             Bottom right
           </div>
-          {/* TODO (On your own §2.1.14): an absolute box in another corner */}
+          {/* TODO §2.1.14 */}
+          <div className="wd-pos-absolute-top-right wd-bg-color-gray wd-dimension-square">
+            Top right
+          </div>
         </div>
         <br /><br /><br /><br /><br /><br /><br />
       </div>
@@ -57,7 +63,8 @@ export default function Positions() {
         <div id="wd-ai-fixed" className="wd-ai-pos-fixed">
           AI fixed
         </div>
-        {/* TODO (On your own §2.1.15): your own fixed badge */}
+        {/* TODO §2.1.15 */}
+        <div className="wd-pos-fixed-badge">My fixed badge</div>
       </div>
     </div>
   );

@@ -13,7 +13,10 @@ export default function Dimensions() {
           This sample box has a long sentence but keeps its declared 120 by 60
           size, so the text overflows the box.
         </div>
-        {/* TODO (On your own §2.1.12): a box with your own width and height */}
+        {/* TODO §2.1.12 */}
+        <div className="wd-dimension-tall wd-bg-color-green wd-fg-color-white">
+          Tall
+        </div>
       </div>
     </div>
   );

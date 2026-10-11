@@ -3,9 +3,14 @@ import CourseCard from "./CourseCard";
 export default function Dashboard() {
   return (
     <div id="wd-dashboard">
-      <h1 id="wd-dashboard-title">Dashboard</h1> <hr />
-      <h2 id="wd-dashboard-published">Published Courses (7)</h2> <hr />
-      <div id="wd-dashboard-courses">
+      <h1 id="wd-dashboard-title">Dashboard</h1>
+      <hr />
+      <h2 id="wd-dashboard-published">Published Courses (8)</h2>
+      <hr />
+      <div
+        id="wd-dashboard-courses"
+        className="grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"
+      >
         <CourseCard
           id="1234"
           title="CS1234 React JS"
@@ -24,6 +29,7 @@ export default function Dashboard() {
           subtitle="NoSQL Databases"
           image="/images/mongodb.jpg"
         />
+        {/* TODO §2.4.2 */}
         <CourseCard
           id="4567"
           title="CS4567 Next.js"
@@ -47,6 +53,13 @@ export default function Dashboard() {
           title="CS7890 CSS"
           subtitle="Styling web pages"
           image="/images/css.jpg"
+        />
+        {/* With AI §2.4.2 */}
+        <CourseCard
+          id="CS9999"
+          title="CS9999 Sample Course"
+          subtitle="Assistant-generated sample — not my course"
+          image="/images/reactjs.jpg"
         />
       </div>
     </div>

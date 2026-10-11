@@ -7,7 +7,11 @@ export default function ForegroundColors() {
         The text in this paragraph is red but{" "}
         <span className="wd-fg-color-green">this text is green</span>
       </p>
-      {/* TODO (On your own §2.1.7): a sentence mixing two wd-fg-color-* classes */}
+      {/* TODO §2.1.7 */}
+      <p className="wd-fg-color-green">
+        This sentence starts green but{" "}
+        <span className="wd-fg-color-red">this part is red</span>
+      </p>
       {/* With AI §2.1.7 */}
       <p id="wd-ai-fg" className="wd-fg-color-blue">
         This sample paragraph is blue but{" "}

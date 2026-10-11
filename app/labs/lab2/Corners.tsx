@@ -14,7 +14,10 @@ export default function Corners() {
       <p className="wd-rounded-corners-inline wd-border-thin wd-border-blue wd-border-solid wd-padding-fat">
         Different rounded corners
       </p>
-      {/* TODO (On your own §2.1.11): a box rounding some corners */}
+      {/* TODO §2.1.11 */}
+      <p className="wd-rounded-corners-diagonal wd-border-thin wd-border-blue wd-border-solid wd-padding-fat">
+        Rounded corners on one diagonal
+      </p>
       {/* With AI §2.1.11 */}
       <p
         id="wd-ai-corners"

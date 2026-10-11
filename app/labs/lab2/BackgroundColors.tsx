@@ -8,8 +8,10 @@ export default function BackgroundColors() {
           the background of this text is green and the foreground white
         </span>
       </p>
-      {/* TODO (On your own §2.1.8): a block stacking a background and a
-          contrasting foreground class */}
+      {/* TODO §2.1.8 */}
+      <p className="wd-bg-color-green wd-fg-color-white">
+        This block has a green background and white text.
+      </p>
       {/* With AI §2.1.8 */}
       <p id="wd-ai-bg" className="wd-bg-color-yellow wd-fg-color-black">
         This sample block has a yellow background and black text.

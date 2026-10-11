@@ -26,8 +26,13 @@ export default function BoxModel() {
         <div className="wd-box-sizing-border">
           border-box again: still 200px wide on screen
         </div>
-        {/* TODO (On your own §2.1.10): change a box-sizing box's width
-            (or add one) and check which keeps the declared width */}
+        {/* TODO §2.1.10 */}
+        <div className="wd-box-sizing-content wd-box-sizing-150">
+          content-box at 150px: renders 210px wide
+        </div>
+        <div className="wd-box-sizing-border wd-box-sizing-150">
+          border-box at 150px: stays 150px wide
+        </div>
       </div>
     </div>
   );

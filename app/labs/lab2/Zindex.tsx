@@ -19,7 +19,10 @@ export default function Zindex() {
         >
           On top
         </div>
-        {/* TODO (On your own §2.1.16): a fourth box with your own z-index */}
+        {/* TODO §2.1.16 */}
+        <div className="wd-zindex-middle wd-bg-color-gray wd-dimension-square">
+          Middle
+        </div>
       </div>
       <br /><br /><br /><br /><br /><br /><br />
     </div>

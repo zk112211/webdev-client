@@ -34,7 +34,10 @@ export default function Display() {
       <div id="wd-ai-display" className="wd-display-inline wd-bg-color-green wd-fg-color-white">
         Sample div forced inline, so its 150px width is ignored
       </div>
-      {/* TODO (On your own §2.1.12): force a div to display: inline */}
+      {/* TODO §2.1.12 */}
+      <div className="wd-display-inline wd-bg-color-yellow">
+        This div is forced inline too, so it sits on the same line
+      </div>
     </div>
   );
 }

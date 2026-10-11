@@ -27,8 +27,12 @@ export default function Float() {
         {LOREM}
         <div className="wd-float-done" />
       </div>
-      {/* TODO (On your own §2.1.17): float one more image or box, wrap
-          text around it, and end with a wd-float-done clearer */}
+      {/* TODO §2.1.17 */}
+      <div>
+        <div className="wd-float-left wd-dimension-portrait wd-bg-color-red" />
+        {LOREM} {LOREM}
+        <div className="wd-float-done" />
+      </div>
       <div>
         <div className="wd-float-left wd-dimension-portrait wd-bg-color-yellow">
           Yellow

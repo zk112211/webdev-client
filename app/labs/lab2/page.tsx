@@ -25,8 +25,11 @@ export default function Lab2() {
         Although it&apos;s very convenient it is considered bad practice and you
         should avoid using the style attribute
       </p>
-      {/* TODO (On your own §2.1.1): a paragraph with a style attribute,
-          green background and yellow text */}
+      {/* TODO §2.1.1 */}
+      <p style={{ backgroundColor: "green", color: "yellow" }}>
+        This paragraph uses the style attribute to set a green background and
+        yellow text.
+      </p>
       {/* With AI §2.1.1 */}
       <p
         id="wd-ai-style-attr"
@@ -45,7 +48,10 @@ export default function Lab2() {
           Here&apos;s another paragraph using a different ID and a different look
           and feel
         </p>
-        {/* TODO (On your own §2.1.3): a third paragraph with a new id */}
+        {/* TODO §2.1.3 */}
+        <p id="wd-id-selector-3">
+          This third paragraph has its own ID, so it gets its own look and feel
+        </p>
         {/* With AI §2.1.3 */}
         <p id="wd-ai-id-selector">
           This sample paragraph has its own id and its own colors.
@@ -60,7 +66,13 @@ export default function Lab2() {
         <h4 className="wd-class-selector">
           This heading has same style as paragraph above
         </h4>
-        {/* TODO (On your own §2.1.4): your class on a p and an h4 */}
+        {/* TODO §2.1.4 */}
+        <p className="wd-my-class-selector">
+          This paragraph uses my own class
+        </p>
+        <h4 className="wd-my-class-selector">
+          This heading shares the same class, so it looks the same
+        </h4>
         {/* With AI §2.1.4 */}
         <p className="wd-ai-class-selector">
           This sample paragraph uses a second shared class
@@ -93,14 +105,24 @@ export default function Lab2() {
               <span className="wd-ai-selector-5">
                 This sample span is styled as a descendant of .wd-selector-1
               </span>
-              {/* TODO (On your own §2.1.5): one more nested element */}
+              <br />
+              {/* TODO §2.1.5 */}
+              <span className="wd-selector-6">
+                This span is styled as a direct child of .wd-selector-3
+              </span>
             </p>
           </div>
         </div>
       </div>
       <div id="wd-css-cascade">
         <h3>Selection rule mechanism</h3>
-        {/* TODO (On your own §2.1.6): your tag/class/id conflict */}
+        {/* TODO §2.1.6 */}
+        <div id="wd-cascade-demo">
+          <p id="wd-cascade" className="wd-cascade">
+            Tag, class, and id rules all set this text color. The id rule
+            wins, so it is blue.
+          </p>
+        </div>
         {/* With AI §2.1.6 */}
         <div id="wd-ai-cascade-demo">
           <p id="wd-ai-cascade" className="wd-ai-cascade">

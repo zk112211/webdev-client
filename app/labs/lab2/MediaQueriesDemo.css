@@ -79,4 +79,20 @@
     text-decoration: underline;
   }
 }
-/* TODO (On your own §2.1.20): one more breakpoint or background change */
+/* TODO §2.1.20 */
+@media (min-width: 1600px) {
+  .wd-media-queries-demo {
+    background-color: black;
+    color: white;
+  }
+  .wd-media-queries-demo li.wd-mq-rule-1250 {
+    opacity: 0.55;
+    font-weight: normal;
+    text-decoration: none;
+  }
+  .wd-media-queries-demo li.wd-mq-rule-1600 {
+    opacity: 1;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}

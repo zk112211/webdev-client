@@ -30,7 +30,18 @@ export default function GridLayout() {
           <h3>Two thirds</h3>
         </div>
       </div>
-      {/* TODO (On your own §2.1.18): another wd-grid-row with a new layout */}
+      {/* TODO §2.1.18 */}
+      <div className="wd-grid-row">
+        <div className="wd-grid-col-third-page wd-bg-color-yellow">
+          <h3>Third 1</h3>
+        </div>
+        <div className="wd-grid-col-third-page wd-bg-color-blue wd-fg-color-white">
+          <h3>Third 2</h3>
+        </div>
+        <div className="wd-grid-col-third-page wd-bg-color-red">
+          <h3>Third 3</h3>
+        </div>
+      </div>
     </div>
   );
 }

@@ -4,7 +4,11 @@
   color: white;
 } */
 
-/* TODO (On your own §2.1.2): a #wd-lab2 h3 rule with your own colors */
+/* TODO §2.1.2 */
+#wd-lab2 h3 {
+  background-color: lightblue;
+  color: darkred;
+}
 
 /* With AI §2.1.2 */
 #wd-lab2 h2 {
@@ -22,7 +26,11 @@ p#wd-id-selector-2 {
   color: black;
 }
 
-/* TODO (On your own §2.1.3): p#wd-id-selector-3 with its own colors */
+/* TODO §2.1.3 */
+p#wd-id-selector-3 {
+  background-color: blue;
+  color: white;
+}
 
 /* With AI §2.1.3 */
 p#wd-ai-id-selector {
@@ -36,7 +44,11 @@ p#wd-ai-id-selector {
   color: blue;
 }
 
-/* TODO (On your own §2.1.4): your own class, e.g. .wd-your-class */
+/* TODO §2.1.4 */
+.wd-my-class-selector {
+  background-color: pink;
+  color: purple;
+}
 
 /* With AI §2.1.4 */
 .wd-ai-class-selector {
@@ -54,7 +66,11 @@ p#wd-ai-id-selector {
   color: blue;
 }
 
-/* TODO (On your own §2.1.5): a new descendant or child selector */
+/* TODO §2.1.5 */
+.wd-selector-3 > .wd-selector-6 {
+  background-color: white;
+  color: green;
+}
 
 /* With AI §2.1.5 */
 .wd-selector-1 .wd-ai-selector-5 {
@@ -62,7 +78,16 @@ p#wd-ai-id-selector {
   color: lime;
 }
 
-/* TODO (On your own §2.1.6): a tag, class, and id rule that conflict on one element */
+/* TODO §2.1.6 */
+:where(#wd-cascade-demo) p {
+  color: green;
+}
+.wd-cascade {
+  color: orange;
+}
+#wd-cascade {
+  color: blue;
+}
 
 /* With AI §2.1.6 — the id rule should win: id beats class beats tag.
    :where(...) adds no specificity, so the tag rule stays a plain
@@ -130,7 +155,11 @@ p#wd-ai-id-selector {
   margin: 30px;
 }
 
-/* TODO (On your own §2.1.10): a new per-side padding or margin class */
+/* TODO §2.1.10 */
+.wd-padded-top-right {
+  padding-top: 50px;
+  padding-right: 50px;
+}
 
 /* §2.1.10 — box model */
 .wd-box-model-parent {
@@ -191,6 +220,11 @@ p#wd-ai-id-selector {
   box-sizing: border-box;
 }
 
+/* TODO §2.1.10 */
+.wd-box-sizing-150 {
+  width: 150px;
+}
+
 /* §2.1.11 — corners */
 .wd-rounded-corners-top {
   border-top-left-radius: 40px;
@@ -207,7 +241,11 @@ p#wd-ai-id-selector {
   border-radius: 30px 0px 20px 50px;
 }
 
-/* TODO (On your own §2.1.11): your own border-radius class */
+/* TODO §2.1.11 */
+.wd-rounded-corners-diagonal {
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
 
 /* With AI §2.1.11 */
 .wd-ai-rounded-left {
@@ -229,7 +267,11 @@ p#wd-ai-id-selector {
   height: 75px;
 }
 
-/* TODO (On your own §2.1.12): a class with your own width and height */
+/* TODO §2.1.12 */
+.wd-dimension-tall {
+  width: 50px;
+  height: 150px;
+}
 
 /* With AI §2.1.12 */
 .wd-ai-dimension {
@@ -311,8 +353,24 @@ p#wd-ai-id-selector {
   bottom: 50%;
 }
 
-/* TODO (On your own §2.1.13–2.1.15): classes for your relative box,
-   absolute box, and fixed badge */
+/* TODO §2.1.13–2.1.15 */
+.wd-pos-relative-nudge-right {
+  position: relative;
+  left: 50px;
+}
+.wd-pos-absolute-top-right {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.wd-pos-fixed-badge {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-color: teal;
+  color: white;
+  padding: 4px 8px;
+}
 
 /* With AI §2.1.15 */
 .wd-ai-pos-fixed {
@@ -329,7 +387,13 @@ p#wd-ai-id-selector {
   z-index: 10;
 }
 
-/* TODO (On your own §2.1.16): z-index for your fourth box */
+/* TODO §2.1.16 */
+.wd-zindex-middle {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 5;
+}
 
 /* With AI §2.1.16 */
 .wd-ai-zindex-top {

@@ -18,8 +18,10 @@ export default function Padding() {
       >
         Padded top only
       </div>
-      {/* TODO (On your own §2.1.10): a box with your new padding or margin
-          class (here or in Margins.tsx) */}
+      {/* TODO §2.1.10 */}
+      <div className="wd-padded-top-right wd-border-fat wd-border-blue wd-border-solid wd-bg-color-yellow">
+        Padded top right
+      </div>
     </div>
   );
 }

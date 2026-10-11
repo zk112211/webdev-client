@@ -22,9 +22,12 @@ export default function MediaQueriesDemo() {
           1000px to 1250px: White text on Blue background
         </li>
         <li className="wd-mq-rule-1250">
-          Above 1250px: White text on Red background
+          1250px to 1600px: White text on Red background
         </li>
-        {/* TODO (On your own §2.1.20): a bullet for your extra breakpoint */}
+        {/* TODO §2.1.20 */}
+        <li className="wd-mq-rule-1600">
+          Above 1600px: White text on Black background
+        </li>
       </ul>
     </div>
   );

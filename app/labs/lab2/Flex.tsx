@@ -9,8 +9,15 @@ export default function Flex() {
           Column 3
         </div>
       </div>
-      {/* TODO (On your own §2.1.19): a fourth row with one growing child
-          and one fixed-width child */}
+      {/* TODO §2.1.19 */}
+      <div className="wd-flex-row-container">
+        <div className="wd-bg-color-red wd-fg-color-white wd-flex-grow-1">
+          Grows
+        </div>
+        <div className="wd-bg-color-blue wd-fg-color-white wd-width-110px">
+          Fixed 110px
+        </div>
+      </div>
       {/* With AI §2.1.19 */}
       <div id="wd-ai-flex" className="wd-flex-row-container">
         <div className="wd-bg-color-gray wd-width-110px">Pinned 110px</div>
