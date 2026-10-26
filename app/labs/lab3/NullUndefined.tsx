@@ -10,7 +10,8 @@ export default function NullUndefined() {
       typeof undefinedValue = {typeof undefinedValue} <br />
       String(null) = {String(null)}             <br />
       String(undefined) = {String(undefined)}   <br />
-      {/* TODO (On your own §3.2.7): a line showing nullValue ?? "default" and its result */}
+      {/* TODO §3.2.7 */}
+      nullValue ?? &quot;default&quot; = {nullValue ?? "default"} <br />
       {/* With AI §3.2.7 */}
       null == undefined = {String(null == undefined)}   <br />
       null === undefined = {String(null === undefined)}

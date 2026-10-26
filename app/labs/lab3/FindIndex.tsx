@@ -8,7 +8,8 @@ export default function FindIndex() {
       <h4>Find Index Function</h4>
       fourIndex = {fourIndex} <br />
       string3Index = {string3Index} <br />
-      {/* TODO (On your own §3.4.6): findIndex for 3, which shows -1 */}
+      {/* TODO §3.4.6 */}
+      threeIndex = {numberArray1.findIndex((a) => a === 3)} <br />
       {/* With AI §3.4.6 */}
       sixIndex = {numberArray1.findIndex((a) => a === 6)}
       <hr />

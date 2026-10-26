@@ -6,7 +6,10 @@ export default function TemplateLiterals() {
   const greeting1 = `Welcome home ${username}`;
   const loggedIn = false;
   const greeting2 = `Logged in: ${loggedIn ? "Yes" : "No"}`;
-  // TODO (On your own §3.3.3): a template with your name and a ternary
+  // TODO §3.3.3
+  const myName = "Kai";
+  const submitted = true;
+  const myStatus = `${myName} submitted A3: ${submitted ? "Yes" : "No"}`;
   // With AI §3.3.3
   const published = true;
   const courseStatus = `RS101 published: ${published ? "Yes" : "No"}`;
@@ -17,7 +20,8 @@ export default function TemplateLiterals() {
       result2 = {result2}     <br />
       greeting1 = {greeting1} <br />
       greeting2 = {greeting2} <br />
-      courseStatus = {courseStatus}
+      courseStatus = {courseStatus} <br />
+      myStatus = {myStatus}
       <hr />
     </div>
   );

@@ -11,7 +11,9 @@ export default function IncludesSomeEvery() {
       includes(8) = {includes8 + ""}           <br />
       some(n &gt; 4) = {someGreaterThan4 + ""} <br />
       every(n &gt; 0) = {everyGreaterThan0 + ""} <br />
-      {/* TODO (On your own §3.4.8): every(n > 4) and some(n === 1) */}
+      {/* TODO §3.4.8 */}
+      every(n &gt; 4) = {numbers.every((n) => n > 4) + ""} <br />
+      some(n === 1) = {numbers.some((n) => n === 1) + ""} <br />
       {/* With AI §3.4.8 */}
       includes(5) = {numbers.includes(5) + ""}
       <hr />

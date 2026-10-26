@@ -5,6 +5,8 @@ export default function Classes() {
   const dangerous = true;
   // With AI §3.6.1
   const shade = "green";
+  // TODO §3.6.1
+  const sunny = true;
   return (
     <div id="wd-classes">
       <h2>Classes</h2>
@@ -25,8 +27,12 @@ export default function Classes() {
       >
         Dangerous background
       </div>
-      {/* TODO (On your own §3.6.1): a sixth box whose class a new const picks
-          with a ternary (wd-bg-green or wd-bg-yellow), naming its color */}
+      {/* TODO §3.6.1 */}
+      <div
+        className={`${sunny ? "wd-bg-yellow" : "wd-bg-green"} wd-fg-black wd-padding-10px`}
+      >
+        {sunny ? "Sunny yellow background" : "Cloudy green background"}
+      </div>
       {/* With AI §3.6.1 */}
       <div className={`wd-bg-${shade} wd-fg-black wd-padding-10px`}>
         Dynamic Green background

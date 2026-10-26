@@ -7,7 +7,8 @@ export default function ServerComponentDemo() {
   const serverRenderTime = new Date().toLocaleTimeString();
   // With AI §3.7.2
   const pid = process.pid;
-  // TODO (On your own §3.7.2): add process.arch to the object below
+  // TODO §3.7.2
+  const arch = process.arch;
   const lab3Dir = path.join(process.cwd(), "app/labs/lab3");
   let files: string[] = [];
   try {
@@ -23,7 +24,7 @@ export default function ServerComponentDemo() {
       <p>Rendered on server at: {serverRenderTime}</p>
       <h2>Server Information</h2>
       <pre>
-        {JSON.stringify({ platform, nodeVersion, serverRenderTime, pid }, null, 2)}
+        {JSON.stringify({ platform, nodeVersion, serverRenderTime, pid, arch }, null, 2)}
       </pre>
       <h2>Filesystem Access Demo</h2>
       <pre>{JSON.stringify(files, null, 2)}</pre>

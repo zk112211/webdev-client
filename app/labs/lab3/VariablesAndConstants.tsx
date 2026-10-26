@@ -4,14 +4,18 @@ export default function VariablesAndConstants() {
   const constant1 = functionScoped - blockScoped;
   // With AI §3.2.1
   const sampleSum = functionScoped + blockScoped;
-  // TODO (On your own §3.2.1): one more let and one more const, shown below
+  // TODO §3.2.1
+  let courseNumber = 5610;
+  const courseName = "Web Development";
   return (
     <div id="wd-variables-and-constants">
       <h4>Variables and Constants</h4>
       functionScoped = {functionScoped} <br />
       blockScoped = {blockScoped}       <br />
       constant1 = {constant1}           <br />
-      sampleSum = {sampleSum}
+      sampleSum = {sampleSum}           <br />
+      courseNumber = {courseNumber}     <br />
+      courseName = {courseName}
       <hr />
     </div>
   );

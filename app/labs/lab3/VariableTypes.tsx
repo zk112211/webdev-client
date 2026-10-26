@@ -9,7 +9,9 @@ export default function VariableTypes() {
   // With AI §3.2.2
   let sampleCount = 42;
   let sampleLabel = "Lab 3";
-  // TODO (On your own §3.2.2): a second string and number, plus typeof for each
+  // TODO §3.2.2
+  const myName = "Kai Zhu";
+  const myYear = 2026;
   return (
     <div id="wd-variable-types">
       <h4>Variables Types</h4>
@@ -23,7 +25,11 @@ export default function VariableTypes() {
       sampleCount = {sampleCount}                 <br />
       typeof sampleCount = {typeof sampleCount}   <br />
       sampleLabel = {sampleLabel}                 <br />
-      typeof sampleLabel = {typeof sampleLabel}
+      typeof sampleLabel = {typeof sampleLabel}   <br />
+      myName = {myName}                           <br />
+      typeof myName = {typeof myName}             <br />
+      myYear = {myYear}                           <br />
+      typeof myYear = {typeof myYear}
       <hr />
     </div>
   );

@@ -8,12 +8,17 @@ export default function ForLoops() {
     stringArray2.push(string1.toUpperCase());
     stringLengths.push(string1.length);
   }
-  // TODO (On your own §3.4.3): a third array of lowercased copies
+  // TODO §3.4.3
+  const stringArray3: string[] = [];
+  for (let i = 0; i < stringArray2.length; i++) {
+    stringArray3.push(stringArray2[i].toLowerCase());
+  }
   return (
     <div id="wd-for-loops">
       <h4>Looping through arrays</h4>
       stringArray2 = {stringArray2} <br />
-      stringLengths = {stringLengths}
+      stringLengths = {stringLengths} <br />
+      stringArray3 = {stringArray3}
       <hr />
     </div>
   );

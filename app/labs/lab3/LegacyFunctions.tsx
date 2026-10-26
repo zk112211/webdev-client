@@ -1,7 +1,10 @@
 function add(a: number, b: number) {
   return a + b;
 }
-// TODO (On your own §3.3): function subtract, called below
+// TODO §3.3
+function subtract(a: number, b: number) {
+  return a - b;
+}
 // With AI §3.3
 function multiply(a: number, b: number) {
   return a * b;
@@ -20,7 +23,8 @@ export default function LegacyFunctions() {
       twoPlusFour = {twoPlusFour} <br />
       add(2, 4) = {add(2, 4)}     <br />
       threeTimesSeven = {threeTimesSeven} <br />
-      multiply(3, 7) = {multiply(3, 7)}
+      multiply(3, 7) = {multiply(3, 7)}   <br />
+      subtract(10, 4) = {subtract(10, 4)}
       <hr />
     </div>
   );

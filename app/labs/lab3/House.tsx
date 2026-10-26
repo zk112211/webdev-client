@@ -11,12 +11,14 @@ export default function House() {
       country: "Italy",
     },
     owners: ["Alice", "Bob"],
-    // TODO (On your own §3.4.11): a yearBuilt property, shown under bathrooms
+    // TODO §3.4.11
+    yearBuilt: 1998,
     // With AI §3.4.11
     garage: { cars: 2 },
   };
   console.log(house);
-  // TODO (On your own §3.4.12): console.log(house.owners)
+  // TODO §3.4.12
+  console.log(house.owners);
   // With AI §3.4.12
   console.log(house.address.city);
   return (
@@ -26,8 +28,12 @@ export default function House() {
       {house.bedrooms}
       <h5>bathrooms</h5>
       {house.bathrooms}
-      {/* TODO (On your own §3.4.12): an <h5>owners</h5> heading followed by
-          the owners joined with ", " */}
+      {/* TODO §3.4.11 */}
+      <h5>yearBuilt</h5>
+      {house.yearBuilt}
+      {/* TODO §3.4.12 */}
+      <h5>owners</h5>
+      {house.owners.join(", ")}
       {/* With AI §3.4.11 */}
       <h5>garage cars</h5>
       {house.garage.cars}

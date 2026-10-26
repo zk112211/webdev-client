@@ -11,7 +11,8 @@ export default function BooleanVariables() {
   let false3 = numberVariable < 100;
   // With AI §3.2.3
   const true6 = numberVariable !== 0;
-  // TODO (On your own §3.2.3): one more === comparison, shown below
+  // TODO §3.2.3
+  const true7 = floatingPointNumber === 234.345;
   return (
     <div id="wd-boolean-variables">
       <h4>Boolean Variables</h4>
@@ -23,7 +24,8 @@ export default function BooleanVariables() {
       true4 = {true4 + ""}   <br />
       true5 = {true5 + ""}   <br />
       false3 = {false3 + ""} <br />
-      true6 = {true6 + ""}
+      true6 = {true6 + ""}   <br />
+      true7 = {true7 + ""}
       <hr />
     </div>
   );

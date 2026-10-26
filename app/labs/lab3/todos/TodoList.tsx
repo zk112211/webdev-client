@@ -1,6 +1,6 @@
 import TodoItem from "./TodoItem";
 // With AI §3.8.4: "Email the TA" was appended to todos.json
-// TODO (On your own §3.8.4): add a fourth todo of your own to todos.json
+// TODO §3.8.4: "Finish Lab 3" was appended to todos.json
 import todos from "./todos.json";
 
 export default function TodoList() {

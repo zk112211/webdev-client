@@ -10,7 +10,9 @@ export default function AddingAndRemovingToFromArrays() {
   todoArray.push(<li key={3}>Walk the dogs</li>);
   // With AI §3.4.2
   todoArray.push(<li key={4}>Buy stamps</li>);
-  // TODO (On your own §3.4.2): push one more todo, then splice the first item
+  // TODO §3.4.2
+  todoArray.push(<li key={5}>Water the plants</li>);
+  todoArray.splice(0, 1);
   numberArray1.splice(2, 1);
   stringArray1.splice(1, 1);
   return (

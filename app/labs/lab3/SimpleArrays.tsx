@@ -8,7 +8,8 @@ export default function SimpleArrays() {
     <li key={1}>Buy milk</li>,
     <li key={2}>Feed the pets</li>,
   ];
-  // TODO (On your own §3.4): push a third li with its own key
+  // TODO §3.4
+  htmlArray1.push(<li key={3}>Walk the dog</li>);
   // With AI §3.4
   htmlArray1.push(<li key={4}>Call the dentist</li>);
   let variableArray1 = [

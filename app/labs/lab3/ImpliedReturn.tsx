@@ -2,7 +2,8 @@ export default function ImpliedReturn() {
   const multiply = (a: number, b: number) => a * b;
   const fourTimesFive = multiply(4, 5);
   console.log(fourTimesFive);
-  // TODO (On your own §3.3.2): const square = (n: number) => n * n, show square(9)
+  // TODO §3.3.2
+  const square = (n: number) => n * n;
   // With AI §3.3.2
   const divide = (a: number, b: number) => a / b;
   return (
@@ -10,7 +11,8 @@ export default function ImpliedReturn() {
       <h4>Implied return</h4>
       fourTimesFive = {fourTimesFive} <br />
       multiply(4, 5) = {multiply(4, 5)} <br />
-      divide(20, 4) = {divide(20, 4)}
+      divide(20, 4) = {divide(20, 4)} <br />
+      square(9) = {square(9)}
       <hr />
     </div>
   );

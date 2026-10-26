@@ -11,7 +11,8 @@ export default function Styles() {
     ...colorBlack,
     ...padding10px,
   };
-  // TODO (On your own §3.6.2): a bgGreen object and a fourth "Green background" box
+  // TODO §3.6.2
+  const bgGreen = { backgroundColor: "lightgreen", ...colorBlack, ...padding10px };
   // With AI §3.6.2
   const bgGray = { backgroundColor: "lightgray", ...colorBlack, ...padding10px };
   return (
@@ -28,6 +29,7 @@ export default function Styles() {
       </div>
       <div style={bgRed}>Red background</div>
       <div style={bgBlue}>Blue background</div>
+      <div style={bgGreen}>Green background</div>
       <div style={bgGray}>Gray background</div>
     </div>
   );

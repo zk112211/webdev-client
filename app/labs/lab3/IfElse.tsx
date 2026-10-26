@@ -6,7 +6,8 @@ export default function IfElse() {
       <h4>If Else</h4>
       {true1 && <p>true1</p>}
       {!false1 ? <p>!false1</p> : <p>false1</p>}
-      {/* TODO (On your own §3.2.4): a third paragraph that reads "not false1" */}
+      {/* TODO §3.2.4 */}
+      {!false1 && <p>not false1</p>}
       {/* With AI §3.2.4 */}
       {false1 && <p>false1</p>}
       <hr />

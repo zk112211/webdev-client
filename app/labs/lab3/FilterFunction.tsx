@@ -3,7 +3,8 @@ export default function FilterFunction() {
   const numbersGreaterThan2 = numberArray1.filter((a) => a > 2);
   const evenNumbers = numberArray1.filter((a) => a % 2 === 0);
   const oddNumbers = numberArray1.filter((a) => a % 2 !== 0);
-  // TODO (On your own §3.4.7): filter numbers >= 5
+  // TODO §3.4.7
+  const numbersAtLeast5 = numberArray1.filter((a) => a >= 5);
   // With AI §3.4.7
   const numbersLessThan2 = numberArray1.filter((a) => a < 2);
   return (
@@ -12,7 +13,8 @@ export default function FilterFunction() {
       numbersGreaterThan2 = {numbersGreaterThan2} <br />
       evenNumbers = {evenNumbers}                 <br />
       oddNumbers = {oddNumbers}                   <br />
-      numbersLessThan2 = {numbersLessThan2}
+      numbersLessThan2 = {numbersLessThan2} <br />
+      numbersAtLeast5 = {numbersAtLeast5}
       <hr />
     </div>
   );

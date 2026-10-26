@@ -76,7 +76,8 @@ export default function Lab3() {
       <ClientComponentDemo />
       <ServerComponentDemo />
       <Add a={3} b={4} />
-      {/* TODO (On your own §3.8): a second <Add a={10} b={20} /> */}
+      {/* TODO §3.8 */}
+      <Add a={10} b={20} />
       {/* With AI §3.8 */}
       <Add a={7} b={8} />
       <h4>Square of 4</h4>
@@ -86,8 +87,11 @@ export default function Lab3() {
       <p>
         Square of 5 = <Square>5</Square>
       </p>
-      {/* TODO (On your own §3.8.1): <Square>9</Square> and a sentence of your
-          own wrapped in Highlight */}
+      {/* TODO §3.8.1 */}
+      <p>
+        Square of 9 = <Square>9</Square>
+      </p>
+      <Highlight>Kai is learning React children props.</Highlight>{" "}
       <Highlight>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
       </Highlight>{" "}

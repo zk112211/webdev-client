@@ -3,8 +3,10 @@ export default function FunctionDestructing() {
   const sum = add(1, 2);
   const subtract = ({ a, b }: { a: number; b: number }) => a - b;
   const difference = subtract({ a: 4, b: 2 });
-  // TODO (On your own §3.4.15): a destructured multiply, and greet with
-  // a default name = "Ada"
+  // TODO §3.4.15
+  const multiply = ({ a, b }: { a: number; b: number }) => a * b;
+  const product = multiply({ a: 3, b: 5 });
+  const greet = ({ name = "Ada" }: { name?: string }) => `Hello, ${name}!`;
   // With AI §3.4.15
   const divide = ({ a, b }: { a: number; b: number }) => a / b;
   const quotient = divide({ a: 10, b: 2 });
@@ -17,7 +19,10 @@ export default function FunctionDestructing() {
       const difference = subtract(&#123; a: 4, b: 2 &#125;); <br />
       sum = {sum}                     <br />
       difference = {difference}       <br />
-      quotient = {quotient}
+      quotient = {quotient}           <br />
+      product = {product}             <br />
+      greet(&#123;&#125;) = {greet({})} <br />
+      greet(&#123; name: &quot;Kai&quot; &#125;) = {greet({ name: "Kai" })}
       <hr />
     </div>
   );

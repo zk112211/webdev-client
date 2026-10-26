@@ -34,8 +34,12 @@ export default function DestructingImports() {
             <td>Matematica.divide(8, 2) = {Matematica.divide(8, 2)}</td>
             <td>divide(8, 2) = {divide(8, 2)}</td>
           </tr>
-          {/* TODO (On your own §3.4.16): a fifth row for add(10, 20) in all
-              three styles (each cell shows 30) */}
+          {/* TODO §3.4.16 */}
+          <tr>
+            <td>Math.add(10, 20) = {Math.add(10, 20)}</td>
+            <td>Matematica.add(10, 20) = {Matematica.add(10, 20)}</td>
+            <td>add(10, 20) = {add(10, 20)}</td>
+          </tr>
           {/* With AI §3.4.16 */}
           <tr>
             <td>Math.remainder(10, 3) = {Math.remainder(10, 3)}</td>

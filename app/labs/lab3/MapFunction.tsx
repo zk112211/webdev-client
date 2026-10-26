@@ -1,9 +1,9 @@
 export default function MapFunction() {
   let numberArray1 = [1, 2, 3, 4, 5, 6];
   const square = (a: number) => a * a;
-  // TODO (On your own §3.4.4): add a third (unique) string to todos
   // With AI §3.4.4: "Email the TA"
-  const todos = ["Buy milk", "Feed the pets", "Email the TA"];
+  // TODO §3.4.4: "Submit A3"
+  const todos = ["Buy milk", "Feed the pets", "Email the TA", "Submit A3"];
   const squares = numberArray1.map(square);
   const cubes = numberArray1.map((a) => a * a * a);
   return (
