@@ -19,7 +19,7 @@ export default function ArrowFunctions() {
       threeMinusOne = {threeMinusOne} <br />
       subtract(3, 1) = {subtract(3, 1)} <br />
       multiply(3, 4) = {multiply(3, 4)} <br />
-      add(3, 4) = {add(3, 4)}
+      add(2, 4) = {add(2, 4)}
       <hr />
     </div>
   );
