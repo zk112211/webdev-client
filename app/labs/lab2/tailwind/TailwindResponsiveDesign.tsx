@@ -15,9 +15,8 @@ export default function TailwindResponsiveDesign() {
   return (
     <div className="font-sans">
       <h2 className="text-3xl font-bold mb-4">Responsive Design</h2>
-      {/* TODO (On your own §2.3.4): make this card's copy or image
-          personal, and add one more md: or lg: utility */}
-      <div className="mx-auto w-full max-w-md overflow-hidden rounded-xl bg-white shadow-md md:max-w-2xl">
+      {/* TODO §2.3.4 */}
+      <div className="mx-auto w-full max-w-md overflow-hidden rounded-xl bg-white shadow-md md:max-w-2xl lg:max-w-3xl">
         <div className="md:flex">
           <div className="relative md:w-48 md:shrink-0">
             <img
@@ -32,16 +31,17 @@ export default function TailwindResponsiveDesign() {
           </div>
           <div className="min-w-0 p-8">
             <div className="text-sm font-semibold tracking-wide text-indigo-500 uppercase">
-              Professional Courses
+              CS5610 Fall 2026
             </div>
             <a
               href="#"
-              className="mt-1 block text-lg leading-tight font-medium text-black no-underline hover:underline"
+              className="mt-1 block text-lg leading-tight font-medium text-black no-underline hover:underline lg:text-2xl"
             >
-              Rocket Propulsion Fundamentals
+              Full Stack Web Development
             </a>
             <p className="mt-2 text-gray-500">
-              An in-depth study of the fundamentals of rocket propulsion...
+              Building Kambaz with Next.js, React, and Tailwind, one lab at a
+              time.
             </p>
           </div>
         </div>

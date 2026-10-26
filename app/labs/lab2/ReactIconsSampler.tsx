@@ -5,6 +5,8 @@ import { FaBookBible } from "react-icons/fa6";
 import { VscAccount } from "react-icons/vsc";
 import { MdOutlineEmojiEvents } from "react-icons/md";
 import { HiOutlineRocketLaunch } from "react-icons/hi2";
+import { IoHeartOutline } from "react-icons/io5";
+import { BsStars } from "react-icons/bs";
 
 export default function ReactIconsSampler() {
   return (
@@ -17,8 +19,9 @@ export default function ReactIconsSampler() {
         <FaCalendar />
         <FaEnvelopeOpenText />
         <FaRegClock />
-        {/* TODO (On your own §2.2): two icons from families not used yet,
-            with a className for size or color */}
+        {/* TODO §2.2 */}
+        <IoHeartOutline className="text-4xl text-red-500" />
+        <BsStars className="text-4xl text-yellow-500" />
         {/* With AI §2.2 */}
         <MdOutlineEmojiEvents className="text-4xl text-blue-600" />
         <HiOutlineRocketLaunch className="text-4xl text-blue-600" />

@@ -53,8 +53,18 @@ export default function TailwindGrids() {
             <h3 className="text-lg font-bold">Sidebar</h3>
           </div>
         </div>
-        {/* TODO (On your own §2.3.6): another row using col-span-* in a new
-            layout (three equal columns, 5/7, ...) */}
+        {/* TODO §2.3.6 */}
+        <div className="grid grid-cols-12 gap-2 mt-2">
+          <div className="col-span-4 bg-pink-400 text-white">
+            <h3 className="text-lg font-bold">First third</h3>
+          </div>
+          <div className="col-span-4 bg-teal-500 text-white">
+            <h3 className="text-lg font-bold">Second third</h3>
+          </div>
+          <div className="col-span-4 bg-amber-300">
+            <h3 className="text-lg font-bold">Last third</h3>
+          </div>
+        </div>
         {/* With AI §2.3.6 */}
         <div id="wd-ai-grid" className="grid grid-cols-12 gap-2 mt-2">
           <div className="col-span-3 bg-purple-500 text-white">

@@ -10,8 +10,14 @@ export default function TailwindFilters() {
         <img className="blur-lg w-1/4" src={src} alt="blur lg" />
         <img className="blur-2xl w-1/4" src={src} alt="blur 2xl" />
       </div>
-      {/* TODO (On your own §2.3.5): a second row with a different filter
-          family (grayscale, brightness-*, contrast-*, ...) */}
+      {/* TODO §2.3.5 */}
+      <h3 className="text-lg font-bold">Contrast, sepia, and hue rotate</h3>
+      <div className="flex">
+        <img className="contrast-50 w-1/4" src={src} alt="contrast 50" />
+        <img className="contrast-150 w-1/4" src={src} alt="contrast 150" />
+        <img className="sepia w-1/4" src={src} alt="sepia" />
+        <img className="hue-rotate-90 w-1/4" src={src} alt="hue rotate 90" />
+      </div>
       {/* With AI §2.3.5 */}
       <div id="wd-ai-filters">
         <h3 className="text-lg font-bold">Grayscale and brightness</h3>

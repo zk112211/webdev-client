@@ -6,8 +6,10 @@ export default function TailwindBackgroundColors() {
       <div className="bg-green-500 text-white p-4 mb-4">This div has a green background.</div>
       <div className="bg-blue-500 text-white p-4 mb-4">This div has a blue background.</div>
       <div className="bg-yellow-500 text-black p-4 mb-4">This div has a yellow background.</div>
-      {/* TODO (On your own §2.3.3): a band with a different color and a
-          non-500 shade, plus a contrasting text-* class */}
+      {/* TODO §2.3.3 */}
+      <div className="bg-pink-200 text-pink-900 p-4 mb-4">
+        This div has a pink-200 background with pink-900 text.
+      </div>
       {/* With AI §2.3.3 */}
       <div id="wd-ai-bg" className="bg-indigo-700 text-white p-4 mb-4">
         This sample div has an indigo-700 background.
