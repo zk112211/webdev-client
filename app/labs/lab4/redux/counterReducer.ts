@@ -10,8 +10,10 @@ const counterSlice = createSlice({
     down: (state) => {
       state.count -= 1;
     },
-    // TODO (On your own §4.6.2): a reducer of your own (e.g. a reset), exported
-    // and dispatched from a button in CounterRedux
+    // On your own §4.6.2
+    double: (state) => {
+      state.count *= 2;
+    },
     // With AI §4.6.2
     reset: (state) => {
       state.count = 7;
@@ -19,5 +21,5 @@ const counterSlice = createSlice({
   },
 });
 
-export const { up, down, reset } = counterSlice.actions;
+export const { up, down, double, reset } = counterSlice.actions;
 export default counterSlice.reducer;

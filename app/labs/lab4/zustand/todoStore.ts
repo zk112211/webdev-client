@@ -13,7 +13,8 @@ type TodoStore = {
   addTodo: (todo: Todo) => void;
   deleteTodo: (id: string) => void;
   updateTodo: (todo: Todo) => void;
-  // TODO (On your own §4.5.2): an extra store function of your own
+  // On your own §4.5.2
+  clearDone: () => void;
   // With AI §4.5.2
   toggleDone: (id: string) => void;
 };
@@ -41,6 +42,11 @@ export const useTodoStore = create<TodoStore>((set) => ({
     set((state) => ({
       todos: state.todos.map((t) => (t.id === todo.id ? todo : t)),
       todo: emptyTodo,
+    })),
+  // On your own §4.5.2
+  clearDone: () =>
+    set((state) => ({
+      todos: state.todos.filter((t) => !t.done),
     })),
   // With AI §4.5.2
   toggleDone: (id) =>

@@ -16,7 +16,8 @@ export default function DateStateVariable() {
   const [startDate, setStartDate] = useState(new Date(2026, 0, 15, 10, 30));
   // With AI §4.2.7
   const [dueDate, setDueDate] = useState(new Date(2026, 0, 22, 10, 30));
-  // TODO (On your own §4.2.7): an endDate with a second date input
+  // On your own §4.2.7
+  const [endDate, setEndDate] = useState(new Date(2026, 0, 29, 10, 30));
   return (
     <div id="wd-date-state-variables">
       <h2>Date State Variables</h2>
@@ -28,6 +29,15 @@ export default function DateStateVariable() {
         value={dateObjectToHtmlDateString(startDate)}
         onChange={(e) => setStartDate(htmlDateStringToDate(e.target.value))}
         id="wd-start-date"
+      />
+      {/* On your own §4.2.7 */}
+      <h3>End: {dateObjectToHtmlDateString(endDate)}</h3>
+      <input
+        type="date"
+        className="rounded border border-neutral-300 px-3 py-1.5"
+        value={dateObjectToHtmlDateString(endDate)}
+        onChange={(e) => setEndDate(htmlDateStringToDate(e.target.value))}
+        id="wd-end-date"
       />
       <h3>Due: {dateObjectToHtmlDateString(dueDate)}</h3>
       <input

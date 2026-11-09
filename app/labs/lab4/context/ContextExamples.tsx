@@ -2,6 +2,8 @@
 import { CounterProvider } from "./CounterContext";
 import ContextCounterRead from "./ContextCounterRead";
 import ContextCounterWrite from "./ContextCounterWrite";
+import { TodosProvider } from "./todosContext";
+import ReactContextTodoList from "./ReactContextTodoList";
 
 export default function ContextExamples() {
   return (
@@ -15,8 +17,10 @@ export default function ContextExamples() {
         <ContextCounterRead />
         <ContextCounterWrite />
       </CounterProvider>
-      {/* TODO (On your own §4.4.2): todosContext.ts and ReactContextTodoList.tsx
-          (add, edit titles, delete), wrapped in its provider here */}
+      {/* On your own §4.4.2 */}
+      <TodosProvider>
+        <ReactContextTodoList />
+      </TodosProvider>
       <hr />
     </div>
   );

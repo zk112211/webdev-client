@@ -6,7 +6,8 @@ export default function Effect() {
   const [count, setCount] = useState(0);
   useEffect(() => {
     document.title = `${name} — clicked ${count}`;
-    // TODO (On your own §4.7): log of your own from this same effect
+    // On your own §4.7
+    console.log(`Effect ran: name=${name}, count=${count}`);
     // With AI §4.7
     console.log(name, count);
   }, [name, count]);

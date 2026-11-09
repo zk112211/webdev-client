@@ -6,8 +6,6 @@ import Link from "next/link";
 export default function UrlEncoding() {
   const [a, setA] = useState("5");
   const [b, setB] = useState("10");
-  // TODO (On your own §4.3.3): a third number of your own, added to both the
-  // query URL and a new path segment folder (e.g. [c])
   // With AI §4.3.3: a sample third number c, added to the query string only
   const [c, setC] = useState("2");
   const router = useRouter();
@@ -22,7 +20,9 @@ export default function UrlEncoding() {
   const goToPathVersion = () => {
     const safeA = encodeURIComponent(a);
     const safeB = encodeURIComponent(b);
-    router.push(`${baseUrl}/path-params/${safeA}/${safeB}`);
+    // On your own §4.3.3
+    const safeC = encodeURIComponent(c);
+    router.push(`${baseUrl}/path-params/${safeA}/${safeB}/${safeC}`);
   };
   return (
     <div id="wd-url-encoding" className="max-w-xl">
@@ -60,7 +60,7 @@ export default function UrlEncoding() {
         className="mb-2 w-full rounded bg-green-600 px-3 py-1.5 text-sm font-medium text-white"
         id="wd-url-query-programmatic"
       >
-        {a} + {b} → Query Params (programmatic)
+        {a} + {b} + {c} → Query Params (programmatic)
       </button>
       <button
         type="button"
@@ -68,7 +68,7 @@ export default function UrlEncoding() {
         className="mb-3 w-full rounded bg-green-600 px-3 py-1.5 text-sm font-medium text-white"
         id="wd-url-path-programmatic"
       >
-        {a} + {b} → Path Params (programmatic)
+        {a} + {b} + {c} → Path Params (programmatic)
       </button>
       <h4>Declarative navigation (using Link):</h4>
       <Link
@@ -76,14 +76,15 @@ export default function UrlEncoding() {
         className="mb-2 block w-full rounded bg-blue-600 px-3 py-1.5 text-center text-sm font-medium text-white no-underline"
         id="wd-url-query-link"
       >
-        {a} + {b} → Query Params (Link)
+        {a} + {b} + {c} → Query Params (Link)
       </Link>
+      {/* On your own §4.3.3 */}
       <Link
-        href={`${baseUrl}/path-params/${encodeURIComponent(a)}/${encodeURIComponent(b)}`}
+        href={`${baseUrl}/path-params/${encodeURIComponent(a)}/${encodeURIComponent(b)}/${encodeURIComponent(c)}`}
         className="mb-2 block w-full rounded bg-blue-600 px-3 py-1.5 text-center text-sm font-medium text-white no-underline"
         id="wd-url-path-link"
       >
-        {a} + {b} → Path Params (Link)
+        {a} + {b} + {c} → Path Params (Link)
       </Link>
       <hr />
     </div>

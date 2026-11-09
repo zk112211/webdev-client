@@ -34,12 +34,26 @@ function Middle({
   return (
     <div id="wd-prop-drill-middle" className="mb-2 rounded border border-neutral-200 p-3">
       <h4>Middle</h4>
-      <Grandchild count={count} setCount={setCount} />
+      <Inner count={count} setCount={setCount} />
     </div>
   );
 }
 
-// TODO (On your own §4.3.2): one more forwarding layer of your own
+// On your own §4.3.2
+function Inner({
+  count,
+  setCount,
+}: {
+  count: number;
+  setCount: (n: number) => void;
+}) {
+  return (
+    <div id="wd-prop-drill-inner" className="mb-2 rounded border border-neutral-200 p-3">
+      <h4>Inner</h4>
+      <Grandchild count={count} setCount={setCount} />
+    </div>
+  );
+}
 
 function Child({
   count,

@@ -2,11 +2,14 @@ export default function PassingFunctions({
   message,
   theFunction,
   theOtherFunction,
+  theNameFunction,
 }: {
   message: string;
   theFunction: (message: string) => void;
   // With AI §4.2.3
   theOtherFunction: () => void;
+  // On your own §4.2.3
+  theNameFunction: () => void;
 }) {
   return (
     <div id="wd-passing-functions">
@@ -19,8 +22,15 @@ export default function PassingFunctions({
       >
         Invoke the Function
       </button>
-      {/* TODO (On your own §4.2.3): a second function prop that alerts your
-          name, and a button here that calls it */}
+      {/* On your own §4.2.3 */}
+      <button
+        type="button"
+        onClick={theNameFunction}
+        id="wd-pass-functions-name-click"
+        className="me-2 rounded bg-blue-600 px-3 py-1.5 text-sm font-medium text-white"
+      >
+        Invoke My Name Function
+      </button>
       {/* With AI §4.2.3 */}
       <button
         type="button"

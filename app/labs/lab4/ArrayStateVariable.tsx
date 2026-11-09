@@ -20,8 +20,15 @@ export default function ArrayStateVariable() {
       >
         Add Element
       </button>
-      {/* TODO (On your own §4.2.9): a Clear button of your own that resets the
-          array to [1, 2, 3, 4, 5] (put it before the sample below) */}
+      {/* On your own §4.2.9 */}
+      <button
+        type="button"
+        onClick={() => setArray([1, 2, 3, 4, 5])}
+        id="wd-my-clear-array-click"
+        className="mb-2 me-2 rounded bg-blue-600 px-3 py-1.5 text-sm font-medium text-white"
+      >
+        Reset to 1–5
+      </button>
       {/* With AI §4.2.9 */}
       <button
         type="button"

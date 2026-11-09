@@ -27,7 +27,15 @@ export default function PassingDataOnEvent() {
       >
         Pass Data Parameter
       </button>
-      {/* TODO (On your own §4.2.2): a third button passing your own string to lifeIs */}
+      {/* On your own §4.2.2 */}
+      <button
+        type="button"
+        onClick={() => lifeIs("Kai is learning React state!")}
+        id="wd-pass-data-mine-click"
+        className="me-2 rounded bg-green-600 px-3 py-1.5 text-sm font-medium text-white"
+      >
+        Pass My String
+      </button>
       {/* With AI §4.2.2 */}
       <button
         type="button"

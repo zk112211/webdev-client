@@ -5,6 +5,8 @@ export default function BooleanStateVariables() {
   const [done, setDone] = useState(true);
   // With AI §4.2.5
   const [saved, setSaved] = useState(false);
+  // On your own §4.2.5
+  const [urgent, setUrgent] = useState(false);
   return (
     <div id="wd-boolean-state-variables">
       <h2>Boolean State Variables</h2>
@@ -19,8 +21,17 @@ export default function BooleanStateVariables() {
         Done
       </label>
       {done && <div className="mt-2 rounded bg-yellow-100 p-2">Yay! Done</div>}
-      {/* TODO (On your own §4.2.5): a second boolean (e.g. urgent) with its own
-          checkbox and a message shown only when it is true */}
+      {/* On your own §4.2.5 */}
+      <label className="mt-2 flex items-center gap-2">
+        <input
+          type="checkbox"
+          checked={urgent}
+          onChange={() => setUrgent(!urgent)}
+          id="wd-boolean-urgent"
+        />
+        Urgent
+      </label>
+      {urgent && <div className="mt-2 rounded bg-red-100 p-2">This is urgent!</div>}
       {/* With AI §4.2.5 */}
       <label className="mt-2 flex items-center gap-2">
         <input

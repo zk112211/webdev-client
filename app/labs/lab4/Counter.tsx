@@ -22,8 +22,15 @@ export default function Counter() {
       >
         Down
       </button>
-      {/* TODO (On your own §4.2.4): a Reset button of your own that sets the
-          count back to 7 (put it before the sample below) */}
+      {/* On your own §4.2.4 */}
+      <button
+        type="button"
+        onClick={() => setCount(7)}
+        id="wd-counter-my-reset-click"
+        className="me-2 rounded bg-blue-600 px-3 py-1.5 text-sm font-medium text-white"
+      >
+        Back to 7
+      </button>
       {/* With AI §4.2.4 */}
       <button
         type="button"

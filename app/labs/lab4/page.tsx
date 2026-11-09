@@ -24,8 +24,10 @@ export default function Lab4() {
   const sayHello = (message: string) => {
     alert(message);
   };
-  // TODO (On your own §4.2.3): a second function that alerts your name,
-  // passed to PassingFunctions as a new prop
+  // On your own §4.2.3
+  const sayMyName = () => {
+    alert("Kai Zhu");
+  };
   // With AI §4.2.3
   const sayOther = () => {
     alert("Sample from parent");
@@ -39,6 +41,7 @@ export default function Lab4() {
         message="Hello from Lab 4"
         theFunction={sayHello}
         theOtherFunction={sayOther}
+        theNameFunction={sayMyName}
       />
       <CounterBroken />
       <Counter />
